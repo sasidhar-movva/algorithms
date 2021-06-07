@@ -19,7 +19,7 @@ function circularSubarraySum(array) {
     prevMin < 0 ? prevMin += n : prevMin = n;
 
     maxSum = Math.max(maxSum, prevMax);
-    minSum = Math.min(prevMin. minSum);
+    minSum = Math.min(prevMin, minSum);
 
     if (n > 0) allNegative = false;
     total += n;
