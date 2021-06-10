@@ -30,15 +30,6 @@ function push(new_data) {
   head = new_node;
 }
 
-// function getMiddleNodeData(slowNode, fastNode) {
-//   if (fastNode.next === undefined || fastNode.next.next === undefined) {
-//       console.log(slowNode.data);
-//       return slowNode.data;
-//   }
-  
-//   getMiddleNodeData(slowNode.next, fastNode.next.next);
-// }
-
 /* Should return data of middle node. If linked list is empty, then  -1*/
 function getMiddle(node)
 { 
