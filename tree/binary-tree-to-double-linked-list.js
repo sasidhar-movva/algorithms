@@ -62,22 +62,3 @@ function processTree(root) {
 
     return head;
 }
-
-function processRightTree(node) {
-    if (node === null) return;
-
-    let dll = new Dll(node.data);
-    tail.right = dll;
-    dll.left = tail;
-    tail = dll;
-
-    if (node.left) {
-        processLeftTree(node.left);
-    }
-
-    if (node.right) {
-        processRightTree(node.right);
-    }
-
-    return tail;
-}
