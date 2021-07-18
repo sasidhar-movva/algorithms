@@ -48,7 +48,6 @@ function minimumStepsToReachTarget(knightPosition, targetPosition, N) {
   return -1;
 }
 
-
 function isValidPosition(x, y, n) {
   return x >= 1 && x <= n && y >= 1 && y <= n;
 }
