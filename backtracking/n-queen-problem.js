@@ -11,6 +11,14 @@ function solveNQ(N) {
   return result;
 }
 
+function sortFunction(a, b) {
+  for (let index = 0; index < a.length; index++) {
+    if (a[index] !== b[index]) {
+      return a[index]-b[index];
+    }
+  }
+}
+
 function isSafe(board, row, col, N) {
   for (let index = 0; index < col; index++) {
     if (board[row][index] === 1) {
